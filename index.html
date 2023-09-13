@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
+    <header class="Header HeaderLayout ">
+      <div class="HeaderContainer">
+        <a class="HeaderLogo"href="#Top" target="_blank"><img alt="ヘッダーロゴ" src="/Users/kimbaraminori/Downloads/PFlogo_crop_page-0001.jpg">
+          <img class="HeaderLogo_img__sp"
+          src="/Users/kimbaraminori/Downloads/PFlogo_crop_page-0001.jpg"
+          alt="ヘッダーロゴ"
+          data-src="/Users/kimbaraminori/Downloads/PFlogo_crop_page-0001.jpg"
+          decoding="async"
+          data-src-webp="/Users/kimbaraminori/Downloads/PFlogo_crop_page-0001.jpg">
+        </a>
+        <div class="navham">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav class="globalMenuSp">
+          <ul>
+            <li><a href="#Aboutpage">ABOUT</a></li>
+            <li><a href="#Hobbypage">HOBBY</a></li>
+            <li><a href="#Contactpage">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+          <ul class="HeaderLists" id="Top">
+            <a class="HeaderLogo" href="#Top"></a>
+            <li class="HeaderList">
+              <a class="HeaderLink"href="#Aboutpage">
+                <span>ABOUT</span>
+              </a>
+            </li>
+
+            <li class="HeaderList">
+              <a class="HeaderLink"href="#Hobbypage">
+                <span>HOBBY</span>
+              </a>
+            </li>
+        
+            <li class="HeaderList">
+              <a class="HeaderLink"href="#Contactpage">
+                <span>CONTACT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<main>
+
+  <div class="FirstView__container"> 
+    <section class="Topimage">
+      <img class="Topimage__main-image Topimage__main-image_sp"
+        src="/Users/kimbaraminori/Downloads/14012144814012144.jpg"
+        alt="スマホ版画像"
+        data-src="/Users/kimbaraminori/Downloads/14012144814012144.jpg"
+        decoding="async"
+        data-src-webp="/Users/kimbaraminori/Downloads/14012144814012144.jpg">
+      <div class="FirstViewContents"> 
+        <div class="FirstViewContent">
+          <h2 class="FirstView">MINORI<br>KIMBARA<br>PORTFOLIO</h2>
+          <h5>Thank you for coming to see</h5>
+        </div>
+      </div>
+    </section>
+  </div>   
+</main>
+  <div class="About" id="Aboutpage">
+    <section class="AboutWrapper">
+      <img class="Aboutphoto" src="/Users/kimbaraminori/Downloads/ap (1).jpg" alt="自己紹介画像">
+      <div class="About_Title">
+        <h2>About me</h2>
+        <p>金原 みのり - Minori Kimbara<br>1999年12月 愛知県生まれ、椙山女学園大学国際コミュニケーション学部卒業。働くことのやりがいを与えたいと思い、総合人材会社に営業職として入社してベンチャー・中小企業を中心に採用支援をする。
+          <br>求人サイトの営業をしてたこともあり、第三者からの意見や自分のアイデアをそのまま形にできるエンジニア、Webデザイナーを志す。
+          <br>2023年2月  progateでプログラミングの勉強を始める
+          <br>2023年3月 プログラミングスクールポテパンキャンプ受講開始
+          <br>2023年7月 プログラミングスクールポテパンキャンプ卒業
+          <br><a class="github"href="https://github.com/Uiro22?tab=repositories">
+            <img alt="githubURL" src="/Users/kimbaraminori/Downloads/名称未設定のデザイン (1) (1).jpg"></a>
+          </p>
+      </div>
+    </section>
+  </div>
+
+    <div class="Hobby" id="Hobbypage">
+      <h2>Hobby</h2>
+      <div class="slide-wrapper">
+        <div id="slide" class="slide">
+          <div>
+            <img src="/Users/kimbaraminori/Downloads/crayon.jpg">
+          </div>
+          <div>
+            <img src="/Users/kimbaraminori/Downloads/crayon3.jpg">
+          </div>
+          <div>
+            <img src="/Users/kimbaraminori/Downloads/crayon2.jpg">
+          </div>
+        </div>
+        <span id="prev" class="prev"></span>
+        <span id="next" class="next"></span>
+        <ul class="indicator" id="indicator">
+          <li class="list"></li>
+          <li class="list"></li>
+          <li class="list"></li>
+        </ul>
+      </div>
+      <p>趣味は芸術鑑賞です。<br>手軽に色彩を楽しめるクレヨン画にハマっています。</p>
+    </div>
+
+    <footer>
+      <svg viewBox="0 0 120 28">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="
+                  1 0 0 0 0  
+                  0 1 0 0 0  
+                  0 0 1 0 0  
+                  0 0 0 13 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+          <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </defs> 
+        <g class="gooeff">
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+      </svg>
+      <div class="Contact" id="Contactpage">
+        <h2>Contact</h2>
+        <a href="mailto:jinyuanminori@gmail.com" class="contact_link">jinyuanminori@gmail.com</a>
+        <div class="Contactsns">
+        <a class="Insta"href="https://www.instagram.com/_____ldwj/">
+        <img alt="インスタグラム" src="/Users/kimbaraminori/Downloads/インスタ.jpg"></a>
+        <a class="X"href="https://twitter.com/Pp_minori2">
+        <img alt="X旧Twitter" src="/Users/kimbaraminori/Downloads/Twitter.jpg"></a>
+        </div>
+        <a class="footer_link"href="#Top">
+          <span>Back to top</span>
+        </a>
+        <p>@20233 Kimbara Minori All Right Reserved.</p>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
