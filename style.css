@@ -405,7 +405,7 @@ main section {
 }
 
 .Topimage{
-    background-image: url(/Users/kimbaraminori/Downloads/194729666194729666.jpg);
+    background-image: url("images/Topimg.jpg");
     background-size: cover;
     background-position: center;
     padding-top: 150px;
