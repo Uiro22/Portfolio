@@ -404,7 +404,7 @@ main section {
     display: block;
 }
 
-.Topimage{
+.Topimage {
     background-image: url("images/Topimg.jpg");
     background-size: cover;
     background-position: center;
