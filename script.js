@@ -16,12 +16,11 @@ $(document).ready(function(){
       event.preventDefault();
       $('html, body').stop().animate({
         scrollTop: target.offset().top
-      }, 1000); // スクロールにかかる時間（ミリ秒）
+      }, 1000);
     }
   });
 });
 
-// 1080px以下の場合にハンバーガーメニューを表示・非表示にする関数
 function toggleHamburgerMenu() {
   const screenWidth = window.innerWidth;
   const hamburger = $('.hamburger');
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const elementTop = elementRect.top;
 
       if (elementTop <= windowHeight * 0.7) {
-        h2Element.classList.add('animated'); // 'animated' クラスを追加してアニメーションを適用
+        h2Element.classList.add('animated');
       }
     });
   }
