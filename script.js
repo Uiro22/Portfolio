@@ -44,12 +44,27 @@ $(function() {
       $(this).toggleClass('active');
 
       if ($(this).hasClass('active')) {
-          $('.globalMenuSp').addClass('active');
+        $('.globalMenuSp').addClass('active').css('transition', 'transform 0.7s ease-in-out');
       } else {
-          $('.globalMenuSp').removeClass('active');
+        $('.globalMenuSp').removeClass('active').css('transition', 'transform 0.7s ease-in-out');
       }
+    });
   });
-});
+
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+
+        $('.hamburger').removeClass('active');
+        $('.globalMenuSp').removeClass('active').css('transition', 'transform 0.7s ease-in-out');
+      }
+    });
+  });
 
 document.addEventListener('DOMContentLoaded', function() {
   const h2Elements = document.querySelectorAll('h2');

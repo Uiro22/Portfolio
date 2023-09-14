@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 body {
     -webkit-font-smoothing: antialiased;
-    position: relative;
+    position: absolute;
     overflow-x: hidden;
 }
 
@@ -122,7 +122,7 @@ body {
         position: fixed;
         z-index : 3;
         right : 23px;
-        top   : 23px;
+        top   : 30px;
         width : 42px;
         height: 42px;
         cursor: pointer;
@@ -196,6 +196,7 @@ body {
         list-style-type: none;
         width: 100%;
         transition: .4s all;
+        
     }
 
     nav.globalMenuSp ul li:last-child {
@@ -214,6 +215,7 @@ body {
         text-align: center;
         font-weight: 700;
         font-size: 30px;
+        font-family: 'PT Sans','Noto Sans JP', sans-serif;
     }
 
     nav.globalMenuSp.active {
@@ -232,6 +234,8 @@ body {
     .HeaderLayout {
         background-color: #e5c7a8;
         z-index: 10;
+        max-height: 40px;
+        overflow: hidden;
     }
 }
 
@@ -354,7 +358,13 @@ body {
 .HeaderLogo {
     height: 20px;
     width: auto;
-    display: block;
+}
+
+@media screen and (max-width: 1080px) {
+    .HeaderLogo {
+        height: 35px;
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -681,6 +691,13 @@ table {
     width: 8%;
 }
 
+@media screen and (max-width: 767px) {
+    .github img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 .Hobby {
     background-color: #e5c7a8;
     padding-top: 300px;
@@ -723,7 +740,7 @@ table {
 
 .slide {
     width: 350%;
-    height: 100%;
+    height: 120%;
     display: flex;
     transition: all .8s;
 }
@@ -811,6 +828,7 @@ table {
     .slide-wrapper {
         width: 70%;
         height: 550px;
+        border-radius: 15px;
     }
 
     .slide {
@@ -823,7 +841,7 @@ table {
     }
 
     .slide img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 }
@@ -832,9 +850,10 @@ table {
     .slide-wrapper {
         width: 90%;
         height: 470px;
+        border-radius: 20px;
     }
 
-    .slide {
+    .slide img {
         width: 300%;
         height: 100%;
     }
@@ -895,6 +914,7 @@ table {
 @media screen and (max-width: 767px) {
     .contact_link {
         font-size: 20px;
+        text-align: center;
     }
 }
 
